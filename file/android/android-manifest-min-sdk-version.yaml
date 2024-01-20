@@ -1,0 +1,20 @@
+id: android-manifest-min-sdk-version
+
+info:
+  name: Android manifest min SDK version
+  author: MrW0l05zyn
+  severity: info
+  tags: android, file
+
+file:
+  - extensions:
+      - xml
+
+    matchers:
+      - type: regex
+        regex:
+          - "android:minSdkVersion=\"[0-9]+\""
+    extractors:
+      - type: regex
+        regex:
+          - "android:minSdkVersion=\"[0-9]+\""

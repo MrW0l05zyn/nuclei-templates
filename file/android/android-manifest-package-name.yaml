@@ -1,0 +1,20 @@
+id: android-manifest-package-name
+
+info:
+  name: Android manifest package name
+  author: MrW0l05zyn
+  severity: info
+  tags: android, file
+
+file:
+  - extensions:
+      - xml
+
+    matchers:
+      - type: regex
+        regex:
+          - "package=\"([^\"]+)\""
+    extractors:
+      - type: regex
+        regex:
+          - "package=\"([^\"]+)\""
